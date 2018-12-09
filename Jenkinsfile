@@ -1,7 +1,7 @@
 node{
     //checkout
     stage('Checkout'){
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'amargit', url: 'https://github.com/amarcsc/learning.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: 'feature/jira-001']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'amargit', url: 'https://github.com/amarcsc/learning.git']]])
     }
    
     
